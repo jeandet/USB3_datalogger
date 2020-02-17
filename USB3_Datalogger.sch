@@ -1,0 +1,114 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1300 3725 2400 2325
+U 5E41F9CA
+F0 "Sheet5E41F9C9" 50
+F1 "USB3.sch" 50
+F2 "3.3V" I L 1300 3950 118
+F3 "VBUS" I L 1300 4175 118
+F4 "CLK" O R 3700 4275 118
+F5 "BE_0" B R 3700 4500 118
+F6 "BE_1" B R 3700 4725 118
+F7 "~TXE" O R 3700 5000 118
+F8 "~RXF" O R 3700 5225 118
+F9 "~WR" I R 3700 5425 118
+F10 "~RD" I R 3700 5675 118
+F11 "~OE" I R 3700 5875 118
+F12 "DATA_[0..15]" B R 3700 4050 118
+$EndSheet
+$Sheet
+S 4975 3875 1300 2200
+U 5E4285EC
+F0 "Sheet5E4285EB" 50
+F1 "FPGA.sch" 50
+F2 "DATA_[0..15]" B L 4975 4050 118
+F3 "FIFO_CLK" I L 4975 4275 118
+F4 "FIFO_BE_0" B L 4975 4500 118
+F5 "FIFO_BE_1" B L 4975 4725 118
+F6 "~FIFO_TXE" O L 4975 5000 118
+F7 "~FIFO_RXF" O L 4975 5225 118
+F8 "~FIFO_WR" I L 4975 5425 118
+F9 "~FIFO_RD" I L 4975 5675 118
+F10 "~FIFO_OE" I L 4975 5875 118
+$EndSheet
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J101
+U 1 1 5E5D9ACE
+P 10450 2550
+F 0 "J101" H 10500 3067 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 10500 2976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 10450 2550 50  0001 C CNN
+F 3 "~" H 10450 2550 50  0001 C CNN
+	1    10450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J102
+U 1 1 5E5DAC54
+P 10450 3600
+F 0 "J102" H 10500 4117 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 10500 4026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 10450 3600 50  0001 C CNN
+F 3 "~" H 10450 3600 50  0001 C CNN
+	1    10450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J103
+U 1 1 5E5DB65A
+P 10450 4625
+F 0 "J103" H 10500 5142 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 10500 5051 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 10450 4625 50  0001 C CNN
+F 3 "~" H 10450 4625 50  0001 C CNN
+	1    10450 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J104
+U 1 1 5E5DC017
+P 10450 5650
+F 0 "J104" H 10500 6167 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 10500 6076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 10450 5650 50  0001 C CNN
+F 3 "~" H 10450 5650 50  0001 C CNN
+	1    10450 5650
+	1    0    0    -1  
+$EndComp
+Text Notes 6100 3100 0    315  ~ 63
+FPGA
+Text Notes 1550 4775 0    315  ~ 63
+USB3
+Wire Bus Line
+	3700 4050 4975 4050
+Wire Wire Line
+	3700 4275 4975 4275
+Wire Wire Line
+	3700 4500 4975 4500
+Wire Wire Line
+	3700 4725 4975 4725
+Wire Wire Line
+	3700 5000 4975 5000
+Wire Wire Line
+	3700 5225 4975 5225
+Wire Wire Line
+	3700 5425 4975 5425
+Wire Wire Line
+	3700 5675 4975 5675
+Wire Wire Line
+	3700 5875 4975 5875
+$EndSCHEMATC
