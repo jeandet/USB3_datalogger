@@ -1067,6 +1067,70 @@ Wire Wire Line
 	6525 5600 6350 5600
 Wire Wire Line
 	5575 5600 5300 5600
+$Comp
+L Oscillator:ASDMB-xxxMHz U101
+U 1 1 5FFACDEC
+P 5775 7050
+F 0 "U101" H 5475 7300 50  0000 L CNN
+F 1 "ASDMB-xxxMHz" H 5975 6750 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASDMB-4Pin_2.5x2.0mm" H 5775 7050 50  0001 C CNN
+F 3 "https://abracon.com/Oscillators/ASDMB.pdf" H 6075 7500 50  0001 C CNN
+	1    5775 7050
+	1    0    0    -1  
+$EndComp
+Text Label 5950 6625 0    50   ~ 0
+3.3V
+$Comp
+L power:GND #PWR0112
+U 1 1 5FFB90A1
+P 5875 7425
+F 0 "#PWR0112" H 5875 7175 50  0001 C CNN
+F 1 "GND" V 5880 7297 50  0000 R CNN
+F 2 "" H 5875 7425 50  0001 C CNN
+F 3 "" H 5875 7425 50  0001 C CNN
+	1    5875 7425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 6750 5875 6625
+Wire Wire Line
+	5875 6625 5950 6625
+Wire Wire Line
+	5875 7425 5875 7350
+Text Label 6325 7050 0    44   ~ 0
+IOR_12
+Wire Wire Line
+	6325 7050 6175 7050
+$Comp
+L Device:C C103
+U 1 1 5FFF2428
+P 5050 7200
+F 0 "C103" H 5075 7300 50  0000 L CNN
+F 1 "100nF" H 5100 7100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5088 7050 50  0001 C CNN
+F 3 "~" H 5050 7200 50  0001 C CNN
+	1    5050 7200
+	1    0    0    -1  
+$EndComp
+Text Label 4950 6975 0    50   ~ 0
+3.3V
+Wire Wire Line
+	5050 7050 5050 6975
+Wire Wire Line
+	5050 6975 4950 6975
+$Comp
+L power:GND #PWR0111
+U 1 1 60014B47
+P 5050 7425
+F 0 "#PWR0111" H 5050 7175 50  0001 C CNN
+F 1 "GND" V 5055 7297 50  0000 R CNN
+F 2 "" H 5050 7425 50  0001 C CNN
+F 3 "" H 5050 7425 50  0001 C CNN
+	1    5050 7425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 7350 5050 7425
 Wire Bus Line
 	1225 5200 1225 7475
 Wire Bus Line

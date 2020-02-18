@@ -1,4 +1,4 @@
-update=lun. 17 févr. 2020 17:37:01 CET
+update=mar. 18 févr. 2020 19:44:26 CET
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.15
 MinViaDiameter=0.4
-MinViaDrill=0.15
+MinViaDrill=0.09999999999999999
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
@@ -247,7 +247,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.15
+Clearance=0.125
 TrackWidth=0.2
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -258,7 +258,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=USB3
-Clearance=0.15
+Clearance=0.125
 TrackWidth=0.15
 ViaDiameter=0.8
 ViaDrill=0.4
