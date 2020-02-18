@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP tps6240x
+F http://www.ti.com/lit/ds/symlink/tps62403.pdf
+$ENDCMP
+#
+#End Doc Library

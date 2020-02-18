@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -4694,41 +4694,61 @@ F 3 "" H 5150 1475 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5150 1475 5150 1400
+NoConn ~ 7650 4900
+Wire Wire Line
+	9000 5100 9225 5100
+Wire Wire Line
+	9000 5200 9225 5200
+Text HLabel 9225 5100 2    44   BiDi ~ 0
+GPIO0
+Text HLabel 9225 5200 2    44   BiDi ~ 0
+GPIO1
+Text Label 4950 3150 0    50   ~ 0
+VBUS
+Wire Wire Line
+	5175 3275 5175 3150
+Wire Wire Line
+	5175 3150 4950 3150
 $Comp
-L Power_Protection:TPD2EUSB30 U204
-U 1 1 5ECB8F03
-P 6750 1500
-F 0 "U204" H 6750 1867 50  0000 C CNN
-F 1 "TPD2EUSB30" H 6750 1776 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:Texas_DRT-3" H 6000 1200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf" H 6750 1500 50  0001 C CNN
-	1    6750 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0222
-U 1 1 5ECC1428
-P 6750 1975
-F 0 "#PWR0222" H 6750 1725 50  0001 C CNN
-F 1 "GND" H 6755 1802 50  0000 C CNN
-F 2 "" H 6750 1975 50  0001 C CNN
-F 3 "" H 6750 1975 50  0001 C CNN
-	1    6750 1975
+L power:GND #PWR0223
+U 1 1 5F178BE9
+P 5175 3950
+F 0 "#PWR0223" H 5175 3700 50  0001 C CNN
+F 1 "GND" H 5180 3777 50  0000 C CNN
+F 2 "" H 5175 3950 50  0001 C CNN
+F 3 "" H 5175 3950 50  0001 C CNN
+	1    5175 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 1975 6750 1900
-Text Label 7275 1500 0    50   ~ 0
-USB2_D-
-Text Label 5975 1500 0    50   ~ 0
+	5175 3950 5175 3875
+Text Label 4400 3475 0    50   ~ 0
+USB2_D+
+$Comp
+L Power_Protection:USB6B1 U204
+U 1 1 5F18B6FE
+P 5175 3575
+F 0 "U204" H 5300 3900 50  0000 C CNN
+F 1 "USB6B1" H 5350 3825 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5175 3575 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf" H 4225 3475 50  0001 C CNN
+	1    5175 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 3475 4400 3475
+Text Label 5700 3475 0    50   ~ 0
 USB2_D+
 Wire Wire Line
-	7275 1500 7150 1500
+	5700 3475 5575 3475
+Text Label 4400 3675 0    50   ~ 0
+USB2_D-
 Wire Wire Line
-	6350 1500 5975 1500
-NoConn ~ 7650 4900
-NoConn ~ 9000 5100
-NoConn ~ 9000 5200
+	4775 3675 4400 3675
+Text Label 5700 3675 0    50   ~ 0
+USB2_D-
+Wire Wire Line
+	5700 3675 5575 3675
 Wire Bus Line
 	9500 3350 9500 4925
 $EndSCHEMATC
