@@ -153,4 +153,5 @@
   (lib (name AD7771)(type Legacy)(uri ${KIPRJMOD}/AD7771.lib)(options "")(descr ""))
   (lib (name USB3_micro)(type Legacy)(uri ${KIPRJMOD}/USB3_micro.lib)(options "")(descr ""))
   (lib (name TPS6240x)(type Legacy)(uri ${KIPRJMOD}/TPS6240x.lib)(options "")(descr ""))
+  (lib (name ICE40)(type Legacy)(uri ${KIPRJMOD}/ICE40.lib)(options "")(descr ""))
 )
