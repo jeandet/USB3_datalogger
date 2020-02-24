@@ -915,4 +915,43 @@ Text Label 9200 5275 0    50   ~ 0
 3.3V
 Wire Wire Line
 	9200 5275 9600 5275
+Wire Wire Line
+	5075 1675 5175 1675
+Wire Wire Line
+	5175 1675 5175 1750
+Connection ~ 5075 1675
+$Comp
+L Device:C C?
+U 1 1 5F16B981
+P 9200 1325
+AR Path="/5F16B981" Ref="C?"  Part="1" 
+AR Path="/5E60B7E8/5F16B981" Ref="C808"  Part="1" 
+F 0 "C808" H 9200 1425 50  0000 L CNN
+F 1 "100nF" H 9315 1280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9238 1175 50  0001 C CNN
+F 3 "~" H 9200 1325 50  0001 C CNN
+	1    9200 1325
+	1    0    0    -1  
+$EndComp
+Text Label 9050 1075 0    50   ~ 0
+3.3V
+$Comp
+L power:GND #PWR?
+U 1 1 5F16B98C
+P 9200 1550
+AR Path="/5E41F9CA/5F16B98C" Ref="#PWR?"  Part="1" 
+AR Path="/5E60B7E8/5F16B98C" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 9200 1300 50  0001 C CNN
+F 1 "GND" H 9205 1377 50  0000 C CNN
+F 2 "" H 9200 1550 50  0001 C CNN
+F 3 "" H 9200 1550 50  0001 C CNN
+	1    9200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1550 9200 1475
+Wire Wire Line
+	9050 1075 9200 1075
+Wire Wire Line
+	9200 1075 9200 1175
 $EndSCHEMATC
