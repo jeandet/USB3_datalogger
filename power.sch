@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:USB3_Datalogger-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -107,9 +108,9 @@ Wire Wire Line
 	4550 3575 4550 3650
 Connection ~ 4550 3575
 Text Label 4700 2925 0    44   ~ 0
-1.2V
+#1.2V
 Text Label 4400 3475 0    44   ~ 0
-3.3V
+#3.3V
 $Comp
 L power:GND #PWR0404
 U 1 1 5F0EAF55
@@ -156,20 +157,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 2925 2025 2925
 Connection ~ 2400 2925
-Text Label 2025 2925 0    44   ~ 0
-VBUS(5V)
-Text HLabel 2025 2925 0    44   Input ~ 0
-VBUS
-Text HLabel 5100 2925 2    44   Output ~ 0
-1.2V
-Text HLabel 4675 3475 2    44   Output ~ 0
-3.3V
-Wire Wire Line
-	4550 3475 4675 3475
-Connection ~ 4550 3475
-Wire Wire Line
-	4950 2925 5100 2925
-Connection ~ 4950 2925
 $Comp
 L Device:C C402
 U 1 1 5F0F0A09
@@ -3538,8 +3525,6 @@ Wire Wire Line
 Wire Wire Line
 	2825 5125 2450 5125
 Connection ~ 2825 5125
-Text Label 2450 5125 0    44   ~ 0
-VBUS(5V)
 $Comp
 L Device:C C404
 U 1 1 5F1034EB
@@ -3595,4 +3580,86 @@ Wire Wire Line
 	4225 5125 4225 5275
 Text Label 4025 5125 0    44   ~ 0
 2.5V
+$Sheet
+S 7550 3500 1275 775 
+U 5E682359
+F0 "sheet5E682359" 118
+F1 "INA226.sch" 118
+F2 "5V" I L 7550 3650 118
+F3 "VIN" I L 7550 3850 118
+F4 "VOUT" O L 7550 4050 118
+F5 "SDA" B R 8825 3725 118
+F6 "SCL" I R 8825 3925 118
+$EndSheet
+$Sheet
+S 7550 4800 1275 775 
+U 5E682C33
+F0 "sheet5E682C33" 118
+F1 "INA226.sch" 118
+F2 "5V" I L 7550 4950 118
+F3 "VIN" I L 7550 5150 118
+F4 "VOUT" O L 7550 5350 118
+F5 "SDA" B R 8825 5025 118
+F6 "SCL" I R 8825 5225 118
+$EndSheet
+Wire Wire Line
+	7550 3650 7050 3650
+Wire Wire Line
+	7550 4950 7125 4950
+Text Label 7050 3850 0    44   ~ 0
+#1.2V
+Text HLabel 7200 4050 0    44   Output ~ 0
+1.2V
+Wire Wire Line
+	7550 4050 7200 4050
+Wire Wire Line
+	7550 3850 7050 3850
+Text Label 7200 5150 0    44   ~ 0
+#3.3V
+Text HLabel 7225 5350 0    44   Output ~ 0
+3.3V
+Wire Wire Line
+	7550 5150 7200 5150
+Wire Wire Line
+	7225 5350 7550 5350
+Wire Wire Line
+	10850 1950 10150 1950
+Wire Wire Line
+	10150 5225 8825 5225
+Wire Wire Line
+	8825 5025 9900 5025
+Wire Wire Line
+	9900 5025 9900 3725
+Wire Wire Line
+	9900 1750 10850 1750
+Text HLabel 10850 1750 2    44   BiDi ~ 0
+SDA
+Text HLabel 10850 1950 2    44   Input ~ 0
+SCL
+Wire Wire Line
+	8825 3925 10150 3925
+Connection ~ 10150 3925
+Wire Wire Line
+	10150 3925 10150 5225
+Wire Wire Line
+	8825 3725 9900 3725
+Connection ~ 9900 3725
+Wire Wire Line
+	10150 1950 10150 3925
+Wire Wire Line
+	9900 1750 9900 3725
+Text HLabel 1525 2725 0    44   Input ~ 0
+USB_5V
+Text Label 1625 2725 0    44   ~ 0
+USB_5V
+Wire Wire Line
+	1625 2725 1525 2725
+Text Label 2025 2925 0    44   ~ 0
+USB_5V
+Text Label 2450 5125 0    44   ~ 0
+USB_5V
+Text Label 7050 3650 0    44   ~ 0
+USB_5V
+Text Label 7125 4950 0    44   ~ 0
+USB_5V
 $EndSCHEMATC
