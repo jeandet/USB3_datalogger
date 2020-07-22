@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:USB3_Datalogger-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 2 8
 Title "USB3 Datalogger"
 Date "2020-03-04"
-Rev "1.0"
+Rev "1.1"
 Comp "LPP/CNRS"
 Comment1 "Alexis Jeandet"
 Comment2 "CC-BY-SA"
@@ -1501,14 +1500,6 @@ F 3 "" H 2750 7300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 7300 2750 7200
-Wire Bus Line
-	1275 2600 1275 4100
-Wire Bus Line
-	6975 1500 6975 3875
-Wire Bus Line
-	4775 1475 4775 3800
-Wire Bus Line
-	9625 1475 9625 4025
 $Bitmap
 Pos 10525 6875
 Scale 1.000000
@@ -2064,4 +2055,12 @@ B1 FA F3 E2 C5 8B 3A E5 21 E4 E5 E5 6B 1D E4 03 55 59 99 53 52 52 48 8F AB AB AB
 07 47 25 A5 D2 E9 03 52 D8 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Bus Line
+	1275 2600 1275 4100
+Wire Bus Line
+	6975 1500 6975 3875
+Wire Bus Line
+	4775 1475 4775 3800
+Wire Bus Line
+	9625 1475 9625 4025
 $EndSCHEMATC

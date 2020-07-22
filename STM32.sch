@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:USB3_Datalogger-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 6 8
 Title "USB3 Datalogger"
 Date "2020-03-04"
-Rev "1.0"
+Rev "1.1"
 Comp "LPP/CNRS"
 Comment1 "Alexis Jeandet"
 Comment2 "CC-BY-SA"
@@ -171,8 +170,6 @@ Text Label 8900 3150 0    50   ~ 0
 USB_D-
 Wire Wire Line
 	9325 3150 8900 3150
-Wire Wire Line
-	9325 3050 8900 3050
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5E647E72
@@ -181,7 +178,7 @@ AR Path="/5E647E72" Ref="SW?"  Part="1"
 AR Path="/5E60B7E8/5E647E72" Ref="RST0"  Part="1" 
 F 0 "RST0" V 2404 2498 50  0000 L CNN
 F 1 "SW_Push" V 2495 2498 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 2450 2550 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQPE1" H 2450 2550 50  0001 C CNN
 F 3 "~" H 2450 2550 50  0001 C CNN
 	1    2450 2350
 	0    1    1    0   
@@ -231,7 +228,7 @@ P 2225 2350
 AR Path="/5E647E89" Ref="C?"  Part="1" 
 AR Path="/5E60B7E8/5E647E89" Ref="C802"  Part="1" 
 F 0 "C802" H 2225 2450 50  0000 L CNN
-F 1 "C" H 2340 2305 50  0000 L CNN
+F 1 "100nF" H 1975 2250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2263 2200 50  0001 C CNN
 F 3 "~" H 2225 2350 50  0001 C CNN
 	1    2225 2350
@@ -261,7 +258,7 @@ AR Path="/5E64AA3D" Ref="SW?"  Part="1"
 AR Path="/5E60B7E8/5E64AA3D" Ref="BOOT0"  Part="1" 
 F 0 "BOOT0" V 1304 1998 50  0000 L CNN
 F 1 "SW_Push" V 1395 1998 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 1350 2050 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQPE1" H 1350 2050 50  0001 C CNN
 F 3 "~" H 1350 2050 50  0001 C CNN
 	1    1350 1850
 	0    1    1    0   
@@ -316,7 +313,7 @@ P 1125 1850
 AR Path="/5E64AA60" Ref="C?"  Part="1" 
 AR Path="/5E60B7E8/5E64AA60" Ref="C801"  Part="1" 
 F 0 "C801" H 1125 1950 50  0000 L CNN
-F 1 "C" H 1240 1805 50  0000 L CNN
+F 1 "100nF" H 850 1750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1163 1700 50  0001 C CNN
 F 3 "~" H 1125 1850 50  0001 C CNN
 	1    1125 1850
@@ -895,18 +892,14 @@ F 3 "" H 9175 5175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9600 5175 9175 5175
-Text Label 3600 4650 0    50   ~ 0
-UART4_TX
-Text Label 3600 4750 0    50   ~ 0
-UART4_RX
-Wire Wire Line
-	3600 4750 4175 4750
-Wire Wire Line
-	3600 4650 4175 4650
+Text Label 5900 2850 0    50   ~ 0
+UART1_TX
+Text Label 5900 2950 0    50   ~ 0
+UART1_RX
 Text Label 9200 4875 0    50   ~ 0
-UART4_TX
+UART1_TX
 Text Label 9200 4975 0    50   ~ 0
-UART4_RX
+UART1_RX
 Wire Wire Line
 	9200 4875 9600 4875
 Wire Wire Line
@@ -1509,4 +1502,31 @@ B1 FA F3 E2 C5 8B 3A E5 21 E4 E5 E5 6B 1D E4 03 55 59 99 53 52 52 48 8F AB AB AB
 07 47 25 A5 D2 E9 03 52 D8 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Device:R R?
+U 1 1 5F1B2720
+P 8600 2825
+AR Path="/5E4285EC/5F1B2720" Ref="R?"  Part="1" 
+AR Path="/5FC0CE7F/5F1B2720" Ref="R?"  Part="1" 
+AR Path="/5F1B2720" Ref="R?"  Part="1" 
+AR Path="/5E60B7E8/5F1B2720" Ref="R608"  Part="1" 
+F 0 "R608" V 8700 2725 50  0000 L CNN
+F 1 "4k7" V 8600 2750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8530 2825 50  0001 C CNN
+F 3 "~" H 8600 2825 50  0001 C CNN
+	1    8600 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2525 8600 2675
+Text Label 8600 2525 0    50   ~ 0
+VBUS
+Wire Wire Line
+	8600 3050 9325 3050
+Wire Wire Line
+	8600 2975 8600 3050
+Wire Wire Line
+	5900 2850 5575 2850
+Wire Wire Line
+	5575 2950 5900 2950
 $EndSCHEMATC

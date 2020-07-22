@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:USB3_Datalogger-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 3 8
 Title "USB3 Datalogger"
 Date "2020-03-04"
-Rev "1.0"
+Rev "1.1"
 Comp "LPP/CNRS"
 Comment1 "Alexis Jeandet"
 Comment2 "CC-BY-SA"
