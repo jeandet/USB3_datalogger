@@ -848,66 +848,62 @@ Text HLabel 5875 4050 2    50   Input ~ 0
 SPI3_MISO
 Text HLabel 5875 3950 2    50   Output ~ 0
 SPI3_SCK
-Text HLabel 5875 3450 2    50   Output ~ 0
+Text HLabel 6075 3450 2    50   Output ~ 0
 SPI3_NSS
 Wire Wire Line
-	5875 3450 5575 3450
+	6075 3450 5575 3450
 Wire Wire Line
 	5875 3950 5575 3950
 Wire Wire Line
 	5875 4050 5575 4050
 Wire Wire Line
 	5875 4150 5575 4150
-Text HLabel 5875 3250 2    50   Input ~ 0
+Text HLabel 3525 4950 0    50   Input ~ 0
 FLASH_CDONE
-Wire Wire Line
-	5875 3250 5575 3250
-Text HLabel 5875 3350 2    50   Output ~ 0
+Text HLabel 3525 5050 0    50   Output ~ 0
 FLASH_~CRESET
-Wire Wire Line
-	5875 3350 5575 3350
 $Comp
 L Connector_Generic:Conn_01x06 J802
 U 1 1 5EFD8EBE
-P 9800 4975
-F 0 "J802" H 9880 4967 50  0000 L CNN
-F 1 "Conn_01x06" H 9880 4876 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9800 4975 50  0001 C CNN
-F 3 "~" H 9800 4975 50  0001 C CNN
-	1    9800 4975
+P 9900 6000
+F 0 "J802" H 9980 5992 50  0000 L CNN
+F 1 "Conn_01x06" H 9980 5901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9900 6000 50  0001 C CNN
+F 3 "~" H 9900 6000 50  0001 C CNN
+	1    9900 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5EFD9B02
-P 9175 5175
+P 9275 6200
 AR Path="/5E41F9CA/5EFD9B02" Ref="#PWR?"  Part="1" 
 AR Path="/5E60B7E8/5EFD9B02" Ref="#PWR0806"  Part="1" 
-F 0 "#PWR0806" H 9175 4925 50  0001 C CNN
-F 1 "GND" H 9180 5002 50  0000 C CNN
-F 2 "" H 9175 5175 50  0001 C CNN
-F 3 "" H 9175 5175 50  0001 C CNN
-	1    9175 5175
+F 0 "#PWR0806" H 9275 5950 50  0001 C CNN
+F 1 "GND" H 9280 6027 50  0000 C CNN
+F 2 "" H 9275 6200 50  0001 C CNN
+F 3 "" H 9275 6200 50  0001 C CNN
+	1    9275 6200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9600 5175 9175 5175
+	9700 6200 9275 6200
 Text Label 5900 2850 0    50   ~ 0
 UART1_TX
 Text Label 5900 2950 0    50   ~ 0
 UART1_RX
-Text Label 9200 4875 0    50   ~ 0
+Text Label 9300 5900 0    50   ~ 0
 UART1_TX
-Text Label 9200 4975 0    50   ~ 0
+Text Label 9300 6000 0    50   ~ 0
 UART1_RX
 Wire Wire Line
-	9200 4875 9600 4875
+	9300 5900 9700 5900
 Wire Wire Line
-	9200 4975 9600 4975
-Text Label 9200 5275 0    50   ~ 0
+	9300 6000 9700 6000
+Text Label 9300 6300 0    50   ~ 0
 3.3V
 Wire Wire Line
-	9200 5275 9600 5275
+	9300 6300 9700 6300
 Wire Wire Line
 	5075 1675 5175 1675
 Wire Wire Line
@@ -1529,4 +1525,68 @@ Wire Wire Line
 	5900 2850 5575 2850
 Wire Wire Line
 	5575 2950 5900 2950
+Text Label 5900 3250 0    50   ~ 0
+SWDIO
+Text Label 5900 3350 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	5575 3350 5900 3350
+Wire Wire Line
+	5575 3250 5900 3250
+Wire Wire Line
+	3525 5050 4175 5050
+Wire Wire Line
+	4175 4950 3525 4950
+Text Notes 8950 5525 0    236  ~ 47
+Debug UART
+Wire Notes Line
+	8750 5125 11175 5125
+Wire Notes Line
+	11175 5125 11175 6400
+Wire Notes Line
+	11175 6400 8750 6400
+Wire Notes Line
+	8750 6400 8750 5125
+Text Label 7575 5700 2    50   ~ 0
+SWDIO
+Text Label 7575 5800 2    50   ~ 0
+SWCLK
+Text Label 7575 5900 2    50   ~ 0
+RESET
+Text Label 7575 6000 2    50   ~ 0
+3.3V
+$Comp
+L power:GND #PWR?
+U 1 1 5F271341
+P 7575 6100
+AR Path="/5E41F9CA/5F271341" Ref="#PWR?"  Part="1" 
+AR Path="/5E60B7E8/5F271341" Ref="#PWR0605"  Part="1" 
+F 0 "#PWR0605" H 7575 5850 50  0001 C CNN
+F 1 "GND" H 7580 5927 50  0000 C CNN
+F 2 "" H 7575 6100 50  0001 C CNN
+F 3 "" H 7575 6100 50  0001 C CNN
+	1    7575 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J601
+U 1 1 5F28DB18
+P 7900 5900
+F 0 "J601" H 7980 5942 50  0000 L CNN
+F 1 "Conn_01x05" H 7980 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7900 5900 50  0001 C CNN
+F 3 "~" H 7900 5900 50  0001 C CNN
+	1    7900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5700 7575 5700
+Wire Wire Line
+	7700 5800 7575 5800
+Wire Wire Line
+	7700 5900 7575 5900
+Wire Wire Line
+	7700 6000 7575 6000
+Wire Wire Line
+	7700 6100 7575 6100
 $EndSCHEMATC
