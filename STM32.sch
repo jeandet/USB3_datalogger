@@ -1547,11 +1547,11 @@ Wire Notes Line
 	11175 6400 8750 6400
 Wire Notes Line
 	8750 6400 8750 5125
-Text Label 7575 5700 2    50   ~ 0
+Text Label 6875 5700 2    50   ~ 0
 SWDIO
-Text Label 7575 5800 2    50   ~ 0
+Text Label 6875 5800 2    50   ~ 0
 SWCLK
-Text Label 7575 5900 2    50   ~ 0
+Text Label 6875 5900 2    50   ~ 0
 RESET
 Text Label 7575 6000 2    50   ~ 0
 3.3V
@@ -1580,13 +1580,64 @@ F 3 "~" H 7900 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7700 5700 7575 5700
+	7700 5700 7375 5700
 Wire Wire Line
-	7700 5800 7575 5800
+	7700 5800 7375 5800
 Wire Wire Line
-	7700 5900 7575 5900
+	7700 5900 7375 5900
 Wire Wire Line
 	7700 6000 7575 6000
 Wire Wire Line
 	7700 6100 7575 6100
+$Comp
+L Device:R R?
+U 1 1 5F1B7E22
+P 7225 5700
+AR Path="/5E4285EC/5F1B7E22" Ref="R?"  Part="1" 
+AR Path="/5FC0CE7F/5F1B7E22" Ref="R?"  Part="1" 
+AR Path="/5F1B7E22" Ref="R?"  Part="1" 
+AR Path="/5E60B7E8/5F1B7E22" Ref="R609"  Part="1" 
+F 0 "R609" V 7175 5850 50  0000 L CNN
+F 1 "22" V 7225 5625 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7155 5700 50  0001 C CNN
+F 3 "~" H 7225 5700 50  0001 C CNN
+	1    7225 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1B7E2C
+P 7225 5800
+AR Path="/5E4285EC/5F1B7E2C" Ref="R?"  Part="1" 
+AR Path="/5FC0CE7F/5F1B7E2C" Ref="R?"  Part="1" 
+AR Path="/5F1B7E2C" Ref="R?"  Part="1" 
+AR Path="/5E60B7E8/5F1B7E2C" Ref="R610"  Part="1" 
+F 0 "R610" V 7175 5950 50  0000 L CNN
+F 1 "22" V 7225 5725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7155 5800 50  0001 C CNN
+F 3 "~" H 7225 5800 50  0001 C CNN
+	1    7225 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F1C67D2
+P 7225 5900
+AR Path="/5E4285EC/5F1C67D2" Ref="R?"  Part="1" 
+AR Path="/5FC0CE7F/5F1C67D2" Ref="R?"  Part="1" 
+AR Path="/5F1C67D2" Ref="R?"  Part="1" 
+AR Path="/5E60B7E8/5F1C67D2" Ref="R611"  Part="1" 
+F 0 "R611" V 7175 6050 50  0000 L CNN
+F 1 "22" V 7225 5825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7155 5900 50  0001 C CNN
+F 3 "~" H 7225 5900 50  0001 C CNN
+	1    7225 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7075 5700 6875 5700
+Wire Wire Line
+	7075 5800 6875 5800
+Wire Wire Line
+	7075 5900 6875 5900
 $EndSCHEMATC
